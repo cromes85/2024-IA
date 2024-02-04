@@ -44,26 +44,22 @@ def ajouter_connaissance(nouvelle_information, source):
 def gestion_conversation(reponse_utilisateur):
     donnees = charger_donnees()
 
-    # Exemple : si l'IA veut dire bonjour
     if not donnees['mots_phrases']:
         print("Bonjour! Comment ça va?")
         donnees['mots_phrases'].append("Bonjour, comment ça va?")
         enregistrer_donnees(donnees)
         return
 
-    # Si l'utilisateur fournit une nouvelle information
     if "apprendre" in reponse_utilisateur.lower():
         nouvelle_information = input("Quelle est la nouvelle information? ")
         source = input("Quelle est la source de cette information? ")
         ajouter_connaissance(nouvelle_information, source)
         print("Merci pour la nouvelle information!")
 
-    # Si la liste des questions n'est pas vide
     elif donnees['questions']:
         question = random.choice(donnees['questions'])
         print(question['question'])
 
-    # Enregistrer les données mises à jour
     enregistrer_donnees(donnees)
 
 # Exemple d'utilisation dans une boucle
@@ -71,6 +67,6 @@ while True:
     reponse_utilisateur = input("Votre réponse (pour quitter, tapez 'exit', 'ciao' ou 'au revoir') : ")
 
     if reponse_utilisateur.lower() in ['exit', 'ciao', 'au revoir']:
-        break  # Sortir de la boucle infinie si l'utilisateur le demande
+        break
 
     gestion_conversation(reponse_utilisateur)
