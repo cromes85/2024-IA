@@ -1,18 +1,35 @@
 {
   "mots_phrases": [
-    "Bonjour, comment ça va?"
+    "Bonjour, comment ça va?",
+    "bonjour"
   ],
   "questions": [
     {
       "question": "Quel est ton animal préféré?",
       "reponse": "J'adore les chats!"
+    },
+    {
+      "question": "ou es tu?",
+      "reponse": null
+    },
+    {
+      "question": "chien",
+      "reponse": null
+    },
+    {
+      "question": "comment vas tu?",
+      "reponse": null
     }
   ],
   "connaissances": [
     {
       "information": "Les éléphants sont les plus grands mammifères terrestres.",
       "source": "Encyclopédie"
+    },
+    {
+      "information": "le ciel est bleu",
+      "source": "moi"
     }
   ],
-  "derniere_question": null
+  "derniere_question": "Quel est ton animal préféré?"
 }

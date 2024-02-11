@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Interface de Gestion de Connaissances</title>
+</head>
+<body>
+    <h1>Bienvenue sur l'interface de gestion de connaissances</h1>
+    <form action="/ajouter/mot_phrase" method="post">
+        <input type="text" name="nouvel_element" placeholder="Ajouter un nouveau mot/phrase" required>
+        <button type="submit">Ajouter</button>
+    </form>
+    <form action="/ajouter/question" method="post">
+        <input type="text" name="question" placeholder="Ajouter une nouvelle question" required>
+        <button type="submit">Ajouter</button>
+    </form>
+    <form action="/ajouter/connaissance" method="post">
+        <input type="text" name="nouvelle_information" placeholder="Nouvelle information" required>
+        <input type="text" name="source" placeholder="Source" required>
+        <button type="submit">Ajouter</button>
+    </form>
+</body>
+</html>
